@@ -5,5 +5,11 @@
         "editor.detectIndentation": false,
         "editor.suggest.insertMode": "replace"
     },
-    "dart.lineLength": 150
+    "dart.lineLength": 150,
+    "files.exclude": {
+        "**/.dart_tool": true,
+        "**/.vscode": true,
+        "**/build": true,
+        "**/node_modules": true
+    }
 }
