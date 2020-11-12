@@ -3,13 +3,14 @@
         "editor.tabSize": 2,
         "editor.insertSpaces": true,
         "editor.detectIndentation": false,
-        "editor.suggest.insertMode": "replace"
+        "editor.suggest.insertMode": "replace",
+        "editor.formatOnSave": true
     },
     "dart.lineLength": 150,
     "files.exclude": {
         "**/.dart_tool": true,
-        "**/.vscode": true,
         "**/build": true,
         "**/node_modules": true
-    }
+    },
+    "editor.formatOnSave": true
 }
