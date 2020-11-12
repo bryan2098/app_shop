@@ -9,6 +9,7 @@ class ProductItem extends StatelessWidget {
   // final String id;
   // final String title;
   // final String imageUrl;
+
   // ProductItem(this.id, this.title, this.imageUrl);
 
   @override
@@ -34,14 +35,14 @@ class ProductItem extends StatelessWidget {
           backgroundColor: Colors.black87,
           leading: Consumer<Product>(
             builder: (ctx, product, _) => IconButton(
-              icon: Icon(
-                product.isFavorite ? Icons.favorite : Icons.favorite_border,
-              ),
-              color: Theme.of(context).accentColor,
-              onPressed: () {
-                product.toggleFavoriteStatus();
-              },
-            ),
+                  icon: Icon(
+                    product.isFavorite ? Icons.favorite : Icons.favorite_border,
+                  ),
+                  color: Theme.of(context).accentColor,
+                  onPressed: () {
+                    product.toggleFavoriteStatus();
+                  },
+                ),
           ),
           title: Text(
             product.title,
@@ -56,9 +57,10 @@ class ProductItem extends StatelessWidget {
               Scaffold.of(context).hideCurrentSnackBar();
               Scaffold.of(context).showSnackBar(
                 SnackBar(
-                  content: Text('Added item to cart!'),
+                  content: Text(
+                    'Added item to cart!',
+                  ),
                   duration: Duration(seconds: 2),
-                  // notification
                   action: SnackBarAction(
                     label: 'UNDO',
                     onPressed: () {
